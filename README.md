@@ -4,19 +4,19 @@ Shell Atlas teaches Linux command-line fundamentals through a star-map campaign,
 
 [Visit the official site](https://shellatlas.app/)
 
-![Shell Atlas campaign map screenshot](screenshots/shell-atlas-map.png)
-
 ## How It Works
 
 Shell Atlas turns terminal basics into short iOS sessions. You follow a narrative campaign, unlock command stars, practice with lessons and puzzles, and return to a spaced-review Vault so the commands stick.
 
-## Screenshots And Proof Points
+## Screenshots
 
-![Shell Atlas lesson screenshot](screenshots/shell-atlas-lesson.png)
+<p>
+  <img src="screenshots/shell-atlas-map.png" width="220" alt="Shell Atlas campaign map screenshot">
+  <img src="screenshots/shell-atlas-lesson.png" width="220" alt="Shell Atlas lesson screenshot">
+  <img src="screenshots/shell-atlas-puzzle.png" width="220" alt="Shell Atlas puzzle screenshot">
+</p>
 
-![Shell Atlas puzzle screenshot](screenshots/shell-atlas-puzzle.png)
-
-![Shell Atlas victory screenshot](screenshots/shell-atlas-victory.png)
+## Proof Points
 
 - Campaign map: commands become route markers in a constellation-style atlas.
 - Lessons: beginner command concepts are taught in small readable steps.

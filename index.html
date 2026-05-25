@@ -121,10 +121,7 @@
     }
 
     .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
-      align-items: center;
-      gap: 44px;
+      display: block;
       padding: 56px 0 42px;
     }
 
@@ -168,24 +165,6 @@
       background: rgba(242, 185, 44, 0.08);
       color: #e9d8a5;
       line-height: 1.55;
-    }
-
-    .phone {
-      position: relative;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      border-radius: 8px;
-      padding: 10px;
-      background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-      box-shadow: 0 28px 80px var(--shadow);
-    }
-
-    .phone img {
-      width: 100%;
-      aspect-ratio: 1170 / 2532;
-      object-fit: cover;
-      border-radius: 6px;
-      border: 1px solid rgba(91, 227, 212, 0.22);
-      background: #0a0f15;
     }
 
     section {
@@ -248,15 +227,18 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
+      grid-template-columns: repeat(3, minmax(0, 220px));
+      gap: 18px;
+      align-items: start;
     }
 
     .shot {
+      margin: 0;
       overflow: hidden;
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 8px;
       background: var(--panel);
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.18);
     }
 
     .shot img {
@@ -319,13 +301,7 @@
 
     @media (max-width: 860px) {
       .hero {
-        grid-template-columns: 1fr;
         padding-top: 36px;
-      }
-
-      .phone {
-        width: min(360px, 100%);
-        margin: 0 auto;
       }
 
       .steps,
@@ -334,7 +310,8 @@
       }
 
       .gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 220px));
+        justify-content: center;
       }
 
       .section-head,
@@ -376,7 +353,14 @@
       }
 
       .gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 220px);
+        gap: 14px;
+        justify-content: center;
+      }
+
+      .shot figcaption {
+        padding: 8px;
+        font-size: 0.78rem;
       }
     }
   </style>
@@ -406,9 +390,6 @@
           This GitHub repository is only a public promotional stub. The app source code, build files, private configs, internal docs, and release workflows are not published here.
         </p>
       </div>
-      <div class="phone" aria-label="Shell Atlas campaign map screenshot">
-        <img src="screenshots/shell-atlas-map.png" alt="Shell Atlas campaign map showing The Shell Awakens route">
-      </div>
     </section>
 
     <section class="wrap" aria-labelledby="how">
@@ -435,7 +416,7 @@
     <section class="wrap" id="screenshots" aria-labelledby="screenshots-title">
       <div class="section-head">
         <h2 id="screenshots-title">Product screenshots</h2>
-        <p>Real app screenshots from the current Shell Atlas UI, copied into this public stub as safe promotional assets.</p>
+        <p>Three public-safe app screenshots from the current Shell Atlas UI.</p>
       </div>
       <div class="gallery">
         <figure class="shot">
@@ -449,10 +430,6 @@
         <figure class="shot">
           <img src="screenshots/shell-atlas-puzzle.png" alt="Puzzle screen assembling command fragments">
           <figcaption>Command assembly puzzles.</figcaption>
-        </figure>
-        <figure class="shot">
-          <img src="screenshots/shell-atlas-victory.png" alt="Victory screen showing path cleared">
-          <figcaption>Progress returns to the route.</figcaption>
         </figure>
       </div>
     </section>
